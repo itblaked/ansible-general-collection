@@ -1,0 +1,9 @@
+---
+# tasks file for os_version_check
+
+- name: Gather facts
+  setup:
+
+- name: Display OS information
+  debug:
+    msg: "OS Family is {{ ansible_os_family }}, Distribution is {{ ansible_distribution }}, Distribution version is {{ ansible_distribution_version }}"
