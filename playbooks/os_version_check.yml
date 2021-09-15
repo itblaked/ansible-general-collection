@@ -1,0 +1,6 @@
+---
+name: OS Version check playbook
+hosts: all
+gather_facts: no
+roles:
+  - { role: itblaked.general.os_version_check }
